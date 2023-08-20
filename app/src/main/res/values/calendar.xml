@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomCalendarTextAppearance">
+        <item name="android:textColor">#F4F6F9</item> <!-- Set your desired text color here -->
+        <!-- Add more text appearance attributes as needed -->
+    </style>
+</resources>

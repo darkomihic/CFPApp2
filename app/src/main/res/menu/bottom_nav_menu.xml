@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_vezbe"
+        android:icon="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:title="Vežbe" />
+    <item
+        android:id="@+id/navigation_raspored"
+        android:icon="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:title="Raspored" />
+    <item
+        android:id="@+id/navigation_trening"
+        android:icon="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:title="Trening" />
+</menu>
