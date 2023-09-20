@@ -2,6 +2,7 @@ package com.example.cfpapp;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,12 @@ public class HomePageActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
 
+    private Button btnRunTimer;
+
+    private Button btnSetCounter;
+
+    private Button btnCreateWorkout;
+
     private static final int NAVIGATION_TRENING = R.id.navigation_trening;
     private static final int NAVIGATION_RASPORED = R.id.navigation_raspored;
     private static final int NAVIGATION_VEZBE = R.id.navigation_vezbe;
@@ -32,6 +39,8 @@ public class HomePageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_page2);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setSelectedItemId(NAVIGATION_RASPORED);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -54,8 +63,10 @@ public class HomePageActivity extends AppCompatActivity {
 
 
 
+
+
         // Load the initial fragment
-        loadFragment(new HomeFragment());
+        loadFragment(new ScheduleFragment());
     }
 
     private void loadFragment(Fragment fragment) {

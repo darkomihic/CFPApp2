@@ -1,22 +1,22 @@
-package com.example.cfpapp;
+package com.example.LoginRegister;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.cfpapp.model.UserProfile;
+
+import com.example.cfpapp.HomePageActivity;
+import com.example.cfpapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskCompletionSource;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -70,6 +70,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                             user.put("username", username);
                             user.put("password", password);
+                            user.put("coach",false);
+                            user.put("group","");
 
                             // Register the user with email and password in Firebase Authentication
                             fs.collection("users")

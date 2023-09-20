@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".CalorieCalendar.CalorieCounterActivity">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222222"
+                android:backgroundTint="#222222"
+                android:orientation="vertical">
+
+                <CalendarView
+                    android:id="@+id/calendarView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minDate="01/01/2023"
+                    android:theme="@style/WhiteTextCalendarView" />
+
+
+                <TextView
+                    android:id="@+id/txtCalorieProtein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No data"
+                    android:background="#00F4F6F9"
+                    android:backgroundTint="#F4F6F9"
+                    android:fontFamily="@font/doppio_one"
+                    android:textColor="#F4F6F9"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/addMeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add meal"
+                    android:backgroundTint="#C15127"
+                    android:fontFamily="@font/doppio_one"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="3"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

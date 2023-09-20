@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#222222"
+tools:context=".ProfileSettings.createWorkoutCoach.WorkoutConfirmationActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222222"
+        tools:context=".ProfileSettings.UserSettingsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWorkoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00F4F6F9"
+                android:backgroundTint="#F4F6F9"
+                android:fontFamily="@font/doppio_one"
+                android:labelFor="@id/TextUsername"
+                android:padding="4dp"
+                android:text="Your last name."
+                android:textAlignment="center"
+                android:textColor="#F4F6F9" />
+
+            <TextView
+                android:id="@+id/tvWorkoutName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00F4F6F9"
+                android:backgroundTint="#F4F6F9"
+                android:fontFamily="@font/doppio_one"
+                android:labelFor="@id/TextUsername"
+                android:padding="4dp"
+                android:text="Your last name."
+                android:textAlignment="center"
+                android:textColor="#F4F6F9" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnMakeWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#C15127"
+                android:fontFamily="@font/doppio_one"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="3"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Accept"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.815" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<!-- workout_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:clickable="true"
+    android:background="@drawable/clickable_item_background">
+
+    <TextView
+        android:id="@+id/mealNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal name"
+        android:fontFamily="@font/doppio_one"
+        android:textColor="#F4F6F9"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mealDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Date"
+        android:textColor="#F4F6F9"
+        android:fontFamily="@font/doppio_one"
+        android:textSize="16sp"/>
+</LinearLayout>

@@ -1,14 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <!-- Define your UI elements here -->
-
+    <!-- Button 1 -->
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/btnRunTimer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
-</LinearLayout>
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#C15127"
+        android:fontFamily="@font/doppio_one"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="3"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Run timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button 2 -->
+    <Button
+        android:id="@+id/btnSetCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie calendar"
+        android:backgroundTint="#C15127"
+        android:fontFamily="@font/doppio_one"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="3"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRunTimer"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button 3 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".ProfileSettings.UserSettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222222"
+            tools:context=".ProfileSettings.UserSettingsActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJoinGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00F4F6F9"
+                    android:backgroundTint="#F4F6F9"
+                    android:fontFamily="@font/doppio_one"
+                    android:labelFor="@id/TextUsername"
+                    android:padding="28dp"
+                    android:text="To join a group contact your coach and request the code of your group."
+                    android:textColor="#F4F6F9" />
+
+                <TextView
+                    android:id="@+id/tvOnaj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00F4F6F9"
+                    android:backgroundTint="#F4F6F9"
+                    android:fontFamily="@font/doppio_one"
+                    android:labelFor="@id/TextUsername"
+                    android:padding="4dp"
+                    android:text="Enter group code here."
+                    android:textAlignment="center"
+                    android:textColor="#F4F6F9" />
+
+                <EditText
+                    android:id="@+id/editTextGroupCode1"
+                    style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edittext_outline"
+                    android:backgroundTint="#C05227"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:outlineProvider="none"
+                    android:textColor="#F4F6F9"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#C15127"
+                    android:fontFamily="@font/doppio_one"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="3"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="Accept"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.815" />
+
+                <TextView
+                    android:id="@+id/textViewInGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00F4F6F9"
+                    android:backgroundTint="#F4F6F9"
+                    android:fontFamily="@font/doppio_one"
+                    android:labelFor="@id/TextUsername"
+                    android:padding="4dp"
+                    android:text="You are already in a group. You can only be in one group, to leave your current group enter your groups code below and press accept."
+                    android:textAlignment="center"
+                    android:textColor="#F4F6F9" />
+
+                <EditText
+                    android:id="@+id/editTextGroupCode2"
+                    style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edittext_outline"
+                    android:backgroundTint="#C05227"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:outlineProvider="none"
+                    android:textColor="#F4F6F9"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#C15127"
+                    android:fontFamily="@font/doppio_one"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="3"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="Accept"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.815" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

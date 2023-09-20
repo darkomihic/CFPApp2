@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#222222"
     android:backgroundTint="#222222"
-    tools:context=".LoginActivity">
+    tools:context="com.example.LoginRegister.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -88,9 +88,9 @@
         android:background="#00F4F6F9"
         android:backgroundTint="#F4F6F9"
         android:fontFamily="@font/doppio_one"
+        android:textColor="#F4F6F9"
         android:labelFor="@id/TextPassword"
         android:text="Password"
-        android:textColor="#F4F6F9"
         app:layout_constraintBottom_toTopOf="@+id/TextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.339"
