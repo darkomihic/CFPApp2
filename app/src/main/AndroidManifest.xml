@@ -68,15 +68,15 @@
             android:label="@string/title_activity_home_page"
             android:theme="@style/Theme.CFPApp" />
         <activity
-            android:name="com.example.LoginRegister.LoginActivity"
+            android:name=".LoginRegister.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.CFPApp" />
         <activity
-            android:name="com.example.LoginRegister.RegisterActivity"
+            android:name=".LoginRegister.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.LoginRegister.MainActivity"
+            android:name=".LoginRegister.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

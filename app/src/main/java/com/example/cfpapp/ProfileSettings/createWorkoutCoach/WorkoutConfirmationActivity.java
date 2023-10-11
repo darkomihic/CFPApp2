@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.cfpapp.HomePageActivity;
 import com.example.cfpapp.ProfileSettings.UserSettingsActivity;
 import com.example.cfpapp.R;
 import com.example.cfpapp.fragments.ScheduleFragment;
@@ -131,9 +132,11 @@ public class WorkoutConfirmationActivity extends AppCompatActivity {
                                                 fs.collection("wrk_exc_link").add(exercise).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                                     @Override
                                                     public void onSuccess(DocumentReference documentReference) {
-                                                        Intent intent = new Intent(WorkoutConfirmationActivity.this, UserSettingsActivity.class); // Replace MainActivity with your main activity or desired destination after workout creation.
+                                                        Intent intent = new Intent(WorkoutConfirmationActivity.this, HomePageActivity.class);
+                                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                                         startActivity(intent);
                                                         finish();
+
                                                     }
                                                 }).addOnFailureListener(new OnFailureListener() {
                                                     @Override

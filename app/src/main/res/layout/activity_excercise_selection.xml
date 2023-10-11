@@ -84,7 +84,7 @@ tools:context=".ProfileSettings.createWorkoutCoach.ExcerciseSelectionActivity">
         android:shadowDx="3"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
+        android:text="Add"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -119,7 +119,7 @@ tools:context=".ProfileSettings.createWorkoutCoach.ExcerciseSelectionActivity">
         android:shadowDx="3"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
+        android:text="Accept"
         android:textColor="#FFFFFF" />
 
 </LinearLayout>

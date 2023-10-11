@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -70,9 +71,7 @@ public class ExcerciseAdapter extends RecyclerView.Adapter<ExcerciseAdapter.Exce
                     clickListener.onItemClick(position, item);
 
                     // Use the context to start the new activity
-                    /*Intent intent = new Intent(context, ExcerciseActivity.class);
-                    intent.putExtra("itemId", item.getId());
-                    context.startActivity(intent);*/
+                    //ovde napisati logiku da udje u opis za vezbu ako cu to dodati
                 }
             }
         });

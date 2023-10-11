@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#222222"
     android:backgroundTint="#222222"
-    tools:context="com.example.LoginRegister.LoginActivity">
+    tools:context=".LoginRegister.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView3"

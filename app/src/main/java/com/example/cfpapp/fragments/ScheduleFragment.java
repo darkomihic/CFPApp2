@@ -1,7 +1,6 @@
 package com.example.cfpapp.fragments;
 
-import static com.example.LoginRegister.LoginActivity.userName;
-import static com.example.LoginRegister.LoginActivity.userid;
+import static com.example.cfpapp.LoginRegister.LoginActivity.userName;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -126,16 +125,15 @@ public class ScheduleFragment extends Fragment {
                 selectedCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
                 Date selectedDate = selectedCalendar.getTime();
-
-
+                Log.d("Calendar", "Selected Date: " + selectedDate.toString());
 
                 try {
                     filterAndDisplayWorkouts(selectedDate);
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
-
             }
+
         });
 
 
@@ -148,21 +146,36 @@ public class ScheduleFragment extends Fragment {
 
     private void filterAndDisplayWorkouts(Date selectedDate) throws ParseException {
         ArrayList<DocumentSnapshot> filteredWorkouts = new ArrayList<>();
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        Date date = new Date();
         fillWorkoutList();
 
         for (DocumentSnapshot workout : workoutList) {
-            if (df.parse(workout.get("date").toString()).equals(df.format(selectedDate)) && workout.get("userid").toString().equals(userName)) {
+            String workoutDate = workout.get("date").toString();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US);
+
+            try {
+                date = dateFormat.parse(workoutDate);
+
+                // Now 'date' contains the parsed date and time information
+                System.out.println(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            Log.d("Filter", "Workout Date: " + workoutDate.toString() + selectedDate);
+            System.out.println(date.equals(selectedDate)+" " + date + " " + selectedDate);
+            // Assuming selectedDate is also in the same format
+            if (workoutDate != null && df.format(date).equals(df.format(selectedDate)) && workout.get("userid").toString().equals(userName)) {
                 filteredWorkouts.add(workout);
             }
         }
 
-
+        Log.d("Filter", "Filtered Workouts Count: " + filteredWorkouts.size());
         adapter.updateData(filteredWorkouts);
-
         recyclerView.setAdapter(adapter);
     }
+
+
 
     private void fillWorkoutList(){
         workoutList.clear();

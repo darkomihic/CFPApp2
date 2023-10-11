@@ -1,6 +1,6 @@
 package com.example.cfpapp.ProfileSettings;
 
-import static com.example.LoginRegister.LoginActivity.userid;
+import static com.example.cfpapp.LoginRegister.LoginActivity.userid;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.LoginRegister.MainActivity;
+import com.example.cfpapp.LoginRegister.MainActivity;
 import com.example.cfpapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

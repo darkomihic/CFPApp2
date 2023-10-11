@@ -13,12 +13,12 @@
         android:id="@+id/tvUserSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:fontFamily="@font/doppio_one"
         android:shadowColor="#A8A8A8"
         android:shadowDx="3"
         android:shadowDy="0"
         android:shadowRadius="5"
+        android:text="Select an user from the dropdown menu."
         android:textColor="#FFFFFF" />
 
     <Spinner
@@ -32,14 +32,14 @@
         android:id="@+id/btnUserSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
         android:layout_gravity="center"
         android:backgroundTint="#C15127"
-        android:textColor="#FFFFFF"
         android:fontFamily="@font/doppio_one"
         android:shadowColor="#A8A8A8"
         android:shadowDx="3"
         android:shadowDy="0"
-        android:shadowRadius="5" />
+        android:shadowRadius="5"
+        android:text="Add"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>

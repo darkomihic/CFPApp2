@@ -1,6 +1,6 @@
 package com.example.cfpapp.fragments;
 
-import static com.example.LoginRegister.LoginActivity.coach;
+import static com.example.cfpapp.LoginRegister.LoginActivity.coach;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -35,16 +35,12 @@ public class TrainingFragment extends Fragment {
         btnJoinGroup = view.findViewById(R.id.btnJoinGroup);
         btnDeleteAcc = view.findViewById(R.id.btnDeleteAcc);
         btnCreateWorkout4User = view.findViewById(R.id.btnCreateWorkout4User);
-        btnCheckUserCalendar = view.findViewById(R.id.btnUserCalendar);
-        view1 = view.findViewById(R.id.view1);
         view2 = view.findViewById(R.id.view2);
 
 
 
         if(coach==false){
             btnCreateWorkout4User.setVisibility(View.INVISIBLE);
-            btnCheckUserCalendar.setVisibility(View.INVISIBLE);
-            view1.setVisibility(View.INVISIBLE);
             view2.setVisibility(View.INVISIBLE);
         }
 
@@ -80,13 +76,7 @@ public class TrainingFragment extends Fragment {
             }
         });
 
-        btnCheckUserCalendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CheckUserCalendarActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         return view;
     }

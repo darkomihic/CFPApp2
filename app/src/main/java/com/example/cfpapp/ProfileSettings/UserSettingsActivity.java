@@ -1,6 +1,6 @@
 package com.example.cfpapp.ProfileSettings;
 
-import static com.example.LoginRegister.LoginActivity.userid;
+import static com.example.cfpapp.LoginRegister.LoginActivity.userid;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

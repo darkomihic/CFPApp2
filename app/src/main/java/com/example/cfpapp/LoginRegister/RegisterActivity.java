@@ -1,4 +1,4 @@
-package com.example.LoginRegister;
+package com.example.cfpapp.LoginRegister;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
